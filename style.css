@@ -15,9 +15,14 @@
     font-weight: 900;
     color: #f9faf8;
 }
-ul {
-    list-style-type: none;}
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-align: right;
+}
 .logo div {
     font-size: 24px;
     font-weight: 700;
@@ -41,6 +46,11 @@ h2 {
     border: 5px solid blueviolet;
 }
 
+.imgtext p {
+    text-align: center;
+    margin: 8px 16px 32px 16px;
+}
+
 .sec2 {
     background-color: #E5E7EB;
     font-size: 36px;
@@ -62,10 +72,10 @@ button {
     border: 1px solid white;
 }
 
-/*Why doesn't this work right??? */
+/*Why does this work with 10px but not 10%? */
 .container {
     border: 2px solid darkblue;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 /* FLEXBOX STYLING */
@@ -78,6 +88,8 @@ body {
 .htop {
     display: flex;
     justify-content: space-between;
+    padding-right: 64px;
+    padding-left: 32px;
 }
 
 .logo {
@@ -90,17 +102,17 @@ body {
 
 .hlinks {
     display: flex;
-    margin-right: 32px;
+    margin-right: 0;
+    margin-left: auto;
     gap: 16px;
     align-items: flex-end;
-    text-align: right;
 }
 
 .hbottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 32px;
+    margin: 64px;
     padding: 0;
     gap: 32px;
 }
@@ -133,10 +145,9 @@ body {
 .container {
     display: flex;
     flex: 1 1 auto;
-    max-width: 33%;
     justify-content: space-around;
     align-items: center;
-    margin: 16px 64px;
+    margin: 32px 64px;
     gap: 16px;
 
 }
@@ -148,4 +159,12 @@ body {
 .sec3 {
     display: flex;
     justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto 32px auto;
 }
