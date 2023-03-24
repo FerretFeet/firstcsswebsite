@@ -1,0 +1,9 @@
+.header, .footer {
+    background: #1F2937;
+    color: white;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
