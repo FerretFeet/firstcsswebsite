@@ -15,22 +15,17 @@
     color: #f9faf8;
 }
 ul {
-    list-style-type: none;
-}
+    list-style-type: none;}
 
-.logo p {
+.logo div {
     font-size: 24px;
     font-weight: 700;
     color: #f9faf8;
 }
-/* TEMP IMG TO MAKE PAGE READABLE */
-img {
-    width: 200px;
-    height: 200px;
-}
 
 button, .sec3 .container {
     background-color: #3882F6;
+    color: white;
 }
 
 h2 {
@@ -51,3 +46,45 @@ h2 {
     font-weight: bold;
     font-size: 18px;
 }
+
+/* FLEXBOX STYLING */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.htop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    margin: 0;
+    gap: 8px;
+}
+
+.hlinks {
+    display: flex;
+    margin-right: 32px;
+    gap: 16px;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.hbottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    padding: 0;
+    gap: 32px;
+}
+
+.hbottom > * {
+    flex: 1 1 33%;
+}
+
