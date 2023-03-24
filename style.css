@@ -54,6 +54,20 @@ h2 {
     font-size: 18px;
 }
 
+button {
+    border-radius: 10%;
+}
+
+.container button {
+    border: 1px solid white;
+}
+
+/*Why doesn't this work right??? */
+.container {
+    border: 2px solid darkblue;
+    border-radius: 5%;
+}
+
 /* FLEXBOX STYLING */
 
 body {
@@ -114,4 +128,24 @@ body {
     flex: 1;
     align-items: flex-end;
     padding: 0 64px 0 64px;
+}
+
+.container {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 33%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px 64px;
+    gap: 16px;
+
+}
+.container > * {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.sec3 {
+    display: flex;
+    justify-content: center;
 }
